@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-// Abstraction: abstract base class
+
 class Vehicle {
 public:
-    virtual void start() = 0;   // pure virtual → abstraction
-    virtual void display() = 0; // polymorphic display
+    virtual void start() = 0;  
+    virtual void display() = 0; 
 };
 
-// Encapsulation: private members with getters
+
 class Car : public Vehicle {
 private:
     string brand;
@@ -26,7 +26,7 @@ public:
     }
 };
 
-// Inheritance + Polymorphism
+
 class Bike : public Vehicle {
 private:
     string type;
@@ -53,10 +53,10 @@ int main() {
     Vehicle* v1 = &c;
     Vehicle* v2 = &b;
 
-    v1->start();   // calls Car’s start()
-    v2->start();   // calls Bike’s start()
+    v1->start(); 
+    v2->start();  
 
-    v1->display(); // polymorphic display
+    v1->display();
     v2->display();
 
     return 0;
