@@ -13,7 +13,6 @@ public:
         cin >> roll;
     }
 };
-
 class Academic : public Student {
 protected:
     int m1, m2;
