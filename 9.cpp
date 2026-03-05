@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 class Vehicle {
 public:
     virtual void start() = 0;  
